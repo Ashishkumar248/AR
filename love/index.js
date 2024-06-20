@@ -79,3 +79,8 @@ class Paper {
 
 const papers = Array.from(document.querySelectorAll('.paper'));
 papers.forEach(paper => new Paper(paper));
+
+document.querySelector('.play-button').addEventListener('click', () => {
+    const audio = document.getElementById('audio');
+    audio.play();
+  });
